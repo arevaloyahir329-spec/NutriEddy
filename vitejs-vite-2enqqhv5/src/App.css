@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #213b2a;
+  background: #fbfaf6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #fbfaf6;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.nutri-page {
+  width: 100%;
+  overflow: hidden;
+}
+
+.nutri-container {
+  width: min(1160px, 90%);
+  margin: 0 auto;
+}
+
+.nutri-header {
+  background: #fbfaf6;
+  border-bottom: 1px solid #e2e9df;
+  padding: 22px 0;
+}
+
+.nutri-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.nutri-logo {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.nutri-logo span {
+  color: #83a388;
+}
+
+.nutri-links {
+  display: flex;
+  gap: 25px;
+  font-size: 14px;
+}
+
+.nutri-button {
+  display: inline-block;
+  border: none;
+  border-radius: 40px;
+  padding: 15px 26px;
+  background: #294c35;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nutri-button:hover {
+  background: #416c4c;
+}
+
+.nutri-hero {
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.nutri-label {
+  color: #719577;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nutri-hero h1 {
+  font-size: clamp(48px, 5vw, 76px);
+  line-height: 1.12;
+  font-weight: 500;
+  margin: 25px 0;
+}
+
+.nutri-hero h1 em {
+  color: #83a388;
+}
+
+.nutri-description {
+  color: #6b7d6e;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.nutri-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.nutri-outline {
+  display: inline-block;
+  border: 1px solid #b9c8b6;
+  border-radius: 40px;
+  padding: 15px 26px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nutri-photo {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 28px;
+}
+
+.nutri-section {
+  padding: 85px 0;
+}
+
+.nutri-soft {
+  background: #edf2e9;
+}
+
+.nutri-center {
+  text-align: center;
+}
+
+.nutri-section h2 {
+  font-size: clamp(36px, 4vw, 54px);
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.nutri-subtitle {
+  color: #718372;
+  line-height: 1.7;
+}
+
+.nutri-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 45px;
+}
+
+.nutri-card {
+  background: white;
+  border: 1px solid #dce6d9;
+  border-radius: 22px;
+  padding: 32px;
+}
+
+.nutri-card h3 {
+  font-size: 24px;
+}
+
+.nutri-card p {
+  color: #718372;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.nutri-icon {
+  font-size: 30px;
+}
+
+.nutri-price {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  margin: 25px 0;
+}
+
+.nutri-featured {
+  background: #294c35;
+  color: white;
+}
+
+.nutri-featured p {
+  color: #d7e5d9;
+}
+
+.nutri-featured .nutri-button {
+  background: white;
+  color: #294c35;
+}
+
+.nutri-list {
+  padding-left: 20px;
+  line-height: 2;
+  font-size: 14px;
+}
+
+.nutri-form {
+  background: white;
+  padding: 35px;
+  border-radius: 24px;
+  border: 1px solid #dce6d9;
+}
+
+.nutri-form input,
+.nutri-form select,
+.nutri-form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #dce6d9;
+  border-radius: 10px;
+  background: white;
+}
+
+.nutri-form textarea {
+  resize: vertical;
+}
+
+.nutri-footer {
+  background: #1b3425;
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+@media (max-width: 850px) {
+  .nutri-hero {
+    grid-template-columns: 1fr;
+    padding: 65px 0;
+  }
+
+  .nutri-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nutri-links {
+    display: none;
+  }
+
+  .nutri-photo {
+    height: 350px;
+  }
+}
